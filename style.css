@@ -1,0 +1,538 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 15px;
+    box-sizing: border-box;
+  }
+  html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+  .container {
+    width: 100%;
+    margin: auto;
+    background: black;
+  }
+  .layar-penuh {
+    width: 100%;
+  }
+  nav {
+    z-index: 100;
+    color: white;
+    text-align: center;
+    position: fixed;
+    border-bottom: 1px solid #000000;
+    line-height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav.putih {
+    background-color: black;
+  }
+  nav .logo {
+    float: left;
+    position: relative;
+    line-height: 55px;
+    text-align: center;
+  }
+  nav .logo img {
+    margin-top: 8px;
+    vertical-align: top middle;
+    width: 200px;
+    float: left;
+    height: auto;
+    margin-left: 30px;
+  }
+
+  .mp-1{
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0px;
+  }
+  nav .menu {
+    float: right;
+    height: 60px;
+    max-width: 600px;
+    margin-right: 20px;
+  }
+  
+  nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: sticky;
+    position: -webkit-sticky;
+  }
+  
+  nav .menu ul li {
+    list-style-type: none;
+    float: right;
+    line-height: 60px;
+  }
+  
+  nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    margin-right: 30px;
+  }
+
+  
+  nav ul li a:hover {
+    background-color: #F8CE63;
+    color: white;
+    border-radius: 100px;
+  }
+
+
+  a.tbl-biru{
+    background: #F8CE63;
+    border-radius: 50px;
+    margin-top: 0px;
+    padding: 20x;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tbl-biru:hover {
+    background: #519B80;
+    text-decoration: none;
+}
+  
+  /* pengaturan header */
+  header {
+    position: relative;
+    height: 130vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+  }
+  header .banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -2;
+
+  }
+  header .banner img {
+    width: 100%;
+
+  }
+  header .intro {
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 20%;
+  }
+  header .intro h3 {
+    font-style: italic;
+    font-size: 120px;
+    margin:0;
+    padding: 0;
+  }
+  header .intro h4 {
+    font-style: italic;
+    font-size: 60px;
+    margin-top: 80px;
+    padding: 0;
+  }
+  header .intro p {
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 310px;
+    font-size: 30px;
+    font-style: oblique;
+  }  
+  header .intro p1 {
+    margin-right: 20px;
+    margin-left: 50px;
+    margin-top: 200px;
+    font-size: 30px;
+  } 
+  .tombol {
+    background-color: #519B80;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 20px 0px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+  header .overlay {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(black, #2B2B2B);
+    opacity: 85%;
+    z-index: -1;
+  }
+  
+  .tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+  }
+  .tombol-menu .garis {
+    height: 3px;
+    background-color: black;
+  }
+  .tombol .menu {
+    display: flex;
+  }
+  section {
+    padding: 50px 0px 50px 0px;
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+  }
+  section img {
+    display: block;
+    width: 33%;
+    height: auto;
+  }
+  section h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  section h3::after {
+    content: "";
+    border-bottom: 5px solid #c86b85;
+    width: 52px;
+    display: block;
+    margin: 20px auto;
+  }
+  #ABOUTUS,
+  #GALLERY,
+  #CONTACT {
+    text-align: center;
+  }
+  section p.ringkasan {
+    font-style: italic;
+    font-size: 18px;
+    color: #444444;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  nav.putih {
+    background-color: #fff;
+  }
+  nav.putih .tombol-menu .garis {
+    background-color: white;
+  }
+  nav.putih ul li a {
+    color: white;
+  }
+  nav .logo img.hitam {
+    display: none;
+  }
+
+
+  .box{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 200px;
+  }
+  .card{
+    height: 100px;
+    width: 300px;
+    background: #519B80;
+    border-radius: 20px;
+    margin: 50px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 8px 8px 2px rgb(100, 100, 100);
+  }
+
+
+
+  .kotak{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+
+  }
+  .kartu{
+    height: 305px;
+    width: 300px;
+    padding: 25px 35px;
+    background: #56947E;
+    border-radius: 20px;
+    margin: 18px;
+    position:relative;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .kartu img {
+    width: 100%;
+    height: 230px;
+
+  }
+  .kartu .button{
+    background-color:#F8CE63;
+    color: black;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s; 
+  }
+  .kartu .button:hover{
+    background-color: transparent;
+    border: 2px solid #F8CE63;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+  h5{
+    color: black;
+	  font-size: 23px;
+	  margin-bottom: 15px;
+  }
+
+  
+  section.quote {
+    background: url("asset/bgdalam.jpg") no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-style: italic;
+    padding: 100px;
+  }
+  section.quote .layar-dalam p {
+    display: inline;
+    background: url("asset/quote-icon.png") no-repeat;
+    padding: 40px;
+  }
+  
+  .blog .area {
+    width: 47%;
+    box-shadow: 0px -10px 30px #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .blog div.area div {
+    width: 50%;
+  }
+  .blog .area .gambar {
+    border-radius: 5px 0px 0px 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+  }
+  .blog .area .text article {
+    padding: 40px;
+  }
+  .blog .area .text article h4 {
+    margin: 0px;
+  }
+  .blog .area .text article a {
+    color: rgb(152, 178, 233);
+    text-decoration: none;
+    transition: color 0.5s ease;
+  }
+  .blog .area .text article a:hover {
+    color: #ccc;
+  }
+
+
+
+  footer {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: #519B80;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  footer h3::after {
+    content: "";
+    border-bottom: 5px solid #F8CE63;
+    width: 52px;
+    display: block;
+    margin: 10px auto;
+    margin-bottom:-50px;
+  }
+  footer p:nth-child(1){
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  footer p:nth-child(2){
+    color: black;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+  }
+
+  footer section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+  }
+  div button{
+    margin-top: 20px;
+    border-radius: 4px;
+    background-color:#F8CE63;
+    border: none;
+    padding: 5px;
+    width: 90px;
+    transition: all 0.5s;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  div button:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  p button{
+    background-color:#F8CE63;
+    color: black;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: .4s; 
+  }
+  p button:hover{
+    background-color: transparent;
+    border: 2px solid #F8CE63;
+    cursor: pointer;
+  }
+
+  
+  .social{
+	display: flex;
+  margin-top: -120px;
+  }
+  .social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:  #30f17a;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+  }
+  .social img{
+    width: 50;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .fa {
+    padding: 4px;
+    width: 200px;
+  }
+
+
+
+  
+  .end{
+    color:black;
+    bottom: 35px;
+    font-size: 14px; 
+  }
+
+  @media screen and (max-width: 991.98px) {
+    .layar-dalam {
+      width: 90%;
+    }
+    nav .menu ul {
+      display: none;
+      margin-top: 60px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    nav .menu ul li {
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+      background-color: #fff;
+      line-height: 70px;
+    }
+    nav .menu ul li a {
+      color: white;
+    }
+    .tombol-menu {
+      display: flex;
+    }
+    .blog .area {
+      display: block;
+    }
+    .blog div.area div {
+      width: 100%;
+    }
+    .blog .area .gambar {
+      border-radius: 5px 5px 0px 0px;
+      height: 200px;
+    }
+    .support {
+      display: block;
+    }
+    .support div {
+      width: 100%;
+      padding-bottom: 30px;
+    }
+  }
